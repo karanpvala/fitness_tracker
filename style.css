@@ -1,0 +1,197 @@
+/* Reset Styles */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #444;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.first_part {
+    display: flex;
+    /* justify-content: ; */
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #444;
+} 
+
+.first-i {
+    height: 40rem;
+    width: 90rem;
+    background-image: url("photoes/first_gym_icon.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    border: 2px solid black;
+    /* box-shadow: 2px 2px 4px black; */
+    background-color: transparent;
+    color: rgb(242, 242, 240);
+    margin: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.first-i:hover {
+    opacity: 0.9;
+    box-shadow: 0px 4px 8px  black;
+}
+
+.f1
+{
+    margin-top: -30rem;
+}
+.f2{
+    font-size:x-large;
+}
+.first-i1 {
+    font-size: 2rem;
+    font-weight:bold;
+    color:white;
+    margin-top: 0.5rem;
+    margin-left:15rem;
+}
+
+.first_part2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #444;
+}
+
+.first-i2 {
+    height: 30rem;
+    width: 50rem;
+    background-image: url("photoes/gym_i_2.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    /* box-shadow: 2px 2px 4px black; */
+    color: rgb(0, 96, 62);
+    border-radius: 2rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.first-i2:hover {
+    opacity: 0.9;
+    box-shadow: 0px 4px 8px black;
+}
+
+.first_outer2 {
+    padding: 1rem;
+    text-align: center;
+    color:white;
+}
+
+/* Footer Styles */
+.footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+} 

@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>Select your language:</p>
+    <select id="languageSelect" onchange="translatePage()">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="gu">Gujarati</option>
+        <option value="ta">Tamil</option>
+        <option value="te">Telugu</option>
+        <option value="mr">Marathi</option> -->
+
+
+        <!-- Add more languages as needed -->
+    <!-- </select>
+    <p id="content">This is an example paragraph that will be translated.</p>
+
+    <script>
+        function translatePage() {
+            var select = document.getElementById('languageSelect');
+            var language = select.value;
+            var text = document.getElementById('content').innerText;
+
+            fetch(`https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    q: text,
+                    target: language
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('content').innerText = data.data.translations[0].translatedText;
+            })
+            .catch(error => { -->
+                <!-- console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html> -->
